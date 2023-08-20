@@ -48,9 +48,9 @@ This problem involves extracting time components from a string, adjusting based 
 def convert_to_24_hour_format(time_str):
 
 # Test case
-input_time = "7 Apr 2023 08:30:45 PM"
+input_time = "7 Apr 2023 09:30:45 PM"
 result3 = convert_to_24_hour_format(input_time)
-print(result3)  # Output: "08:30:45"
+print(result3)  # Output: "21:30:45"
 
 ## License
 
