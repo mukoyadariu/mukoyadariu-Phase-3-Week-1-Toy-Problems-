@@ -1,7 +1,7 @@
 import re
 
 def convert_to_24_hour_format(time_str):
-    # Extract hour, minute, second, and AM/PM parts using regular expressions
+    # Extraction of  hour, minute, second, and AM/PM
     pattern = r'(\d{1,2}):(\d{1,2}):(\d{1,2}) (AM|PM)'
     match = re.match(pattern, time_str)
     
@@ -24,7 +24,7 @@ def convert_to_24_hour_format(time_str):
     else:
         return "Invalid input format"
 
-# Test with the given date
-input_time = "7 Apr 2023 08:30:45 AM"
+# Testting with a specific date
+input_time = "7 Apr 2023 2134"
 result = convert_to_24_hour_format(input_time)
-print(result)  # Output: "08:30:45"
+print(result)  
