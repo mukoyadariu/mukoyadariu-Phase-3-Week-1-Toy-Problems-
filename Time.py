@@ -1,5 +1,6 @@
 import re
 
+
 def convert_to_24_hour_format(time_str):
     # Extraction of  hour, minute, second, and AM/PM
     pattern = r'(\d{1,2}):(\d{1,2}):(\d{1,2}) (AM|PM)'
@@ -11,20 +12,20 @@ def convert_to_24_hour_format(time_str):
         second = int(match.group(3))
         am_pm = match.group(4)
         
-        # Apply AM/PM adjustments
+        # MAKING AM/PM ADJUSTMENTS
         if am_pm == 'PM' and hour != 12:
             hour += 12
         elif am_pm == 'AM' and hour == 12:
             hour = 0
         
-        # Format into 24-hour format
+        # MAKING IT INTO 24 HRS SYSTEM
         formatted_time = f'{hour:02d}:{minute:02d}:{second:02d}'
         return formatted_time
     
     else:
         return "Invalid input format"
 
-# Testting with a specific date
-input_time = "08:30:45 PM"
+# Testing with a specific date
+input_time = "09:30:45 PM"
 result = convert_to_24_hour_format(input_time)
-print(result)  
+print(result) 
