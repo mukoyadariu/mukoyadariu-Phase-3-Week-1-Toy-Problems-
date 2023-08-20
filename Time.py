@@ -25,6 +25,6 @@ def convert_to_24_hour_format(time_str):
         return "Invalid input format"
 
 # Testting with a specific date
-input_time = "7 Apr 2023 2134"
+input_time = "08:30:45 PM"
 result = convert_to_24_hour_format(input_time)
 print(result)  
