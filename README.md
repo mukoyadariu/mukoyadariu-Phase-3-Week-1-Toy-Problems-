@@ -56,4 +56,5 @@ print(result3)  # Output: "21:30:45"
 
 This repository is licensed under the [MIT License](LICENSE).
 
-
+## Author
+This project was created by Mukoya Dennis Darius
